@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <center>
+        <h1>Registration form</h1>
+    </center>
+
+    <form action="">
+       <center>
+        <label for="">Name:</label>
+        <input type="text" required>
+        <br> <br>
+
+        <label for="">Email:</label>
+        <input type="email" required pattern="[@,A-az-Z] {6}">
+        <br> <br>
+
+        <label for="">password:</label>
+        <input type="password" required pattern="[@,#,*,^] {6}">
+        <br> <br>
+
+        <label>
+            <input type="checkbox"  required>
+            I agree to the terms and conditions
+        </label>
+        <br> 
+
+        <p>Gender:</p>
+        <label>
+            <input type="radio" name="abc" required> Male
+        </label>
+        <label>
+            <input type="radio" name="abc" required> Female
+        </label>
+        <br> <br>
+
+        <label for="">Upload Profile Picture:</label>
+        <input type="file">
+        <br> <br>
+
+        <label for="">Country:</label>
+        <select name="Country" id="Country" required>
+            <option value="">Select your country</option>
+            <option value="">United States</option>
+            <option value="">Canada</option>
+            <option value="">India</option>
+            <option value="">United Kingdom</option>
+        </select>
+        <br> <br>
+
+        <button>Click Me</button>
+        <br> <br>
+
+        <input type="Submit">
+        <input type="reset">
+       </center>
+    </form>
+</body>
+</html>
